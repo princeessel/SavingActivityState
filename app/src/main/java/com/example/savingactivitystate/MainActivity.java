@@ -56,6 +56,6 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPrefs = getPreferences(MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPrefs.edit();
         editor.putInt(KEY_COUNTER,mCounter);
-        editor.commit();
+        editor.apply();
     }
 }
